@@ -1,0 +1,25 @@
+
+
+<ion-view view-title="Cafe List">
+  <ion-content>
+        <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" ng-model="movie.name" ng-change="searchMovieDB()">
+      </label>
+    <ion-list>
+      <ion-item ng-repeat="otherfriend in otherfriends" 
+      class="item-avatar item-icon-right"       
+      href="#/app/playlists/{{otherfriend.FIELD1}}">
+      	<img ng-src="/img/30cafe/{{otherfriend.cimg}}/img1.jpg">
+        <h2>{{otherfriend.cname}}</h2>
+        <h4>{{otherfriend.carea}}</h4>
+        <ion-button class="button button-icon icon ion-ios-heart-outline icon-right" ng-click="showAlert()"></ion-button>
+        <!-- <button ng-click="showAlert()" class="button button-icon icon ion-ios-heart-outline icon-right"></button> -->
+<!--     <a href=""><i class="icon ion-ios-heart-outline" on-icon="ion-ios-heart-outline" off-icon="ion-ios-heart" icon-switcher /></a> -->
+ <!--        <a href="" class="button button-icon">
+          <i class="icon ion-ionic my-icon"></i> -->
+      </ion-item>
+
+    </ion-list>
+  </ion-content>
+</ion-view>
